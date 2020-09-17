@@ -32,7 +32,6 @@ gitflow
         if (!token) {
             token = await github.setGithubCredentials();
 
-            // token = await github.registerNewToken();
         }
 
         console.log(token);
