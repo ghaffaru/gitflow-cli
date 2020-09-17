@@ -1,0 +1,16 @@
+{
+  "name": "gitflow-cli",
+  "version": "1.0.0",
+  "description": "Run all your git workflow in one command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ghaff",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "figlet": "^1.5.0"
+  }
+}
