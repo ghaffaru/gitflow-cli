@@ -2,7 +2,7 @@ const gitflow = require('commander');
 
 const chalk = require('chalk')
 
-const figlet = requre('figlet')
+const figlet = require('figlet')
 
 const clear = require('clear');
 
@@ -13,4 +13,14 @@ gitflow
 
     .description('Draw the app banner')
 
-    .
+    .action(() => {
+        clear();
+        console.log(chalk.magenta(figlet.textSync('gitflow-cli', {horizontalLayout: 'full'})));
+
+    })
+
+gitflow.parse(process.argv);
+
+if (!gitflow.args.length) {
+    gitflow.help()
+}
